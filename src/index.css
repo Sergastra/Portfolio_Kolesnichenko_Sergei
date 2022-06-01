@@ -1,0 +1,9 @@
+body {
+  box-sizing: border-box; 
+  margin: 0;
+  font-family: 300 11px/1.4 'HelveticaNeue', 'sans-serif';
+  color: #444;
+  background: rgb(1, 1, 16);
+  overflow: hidden;
+  
+}

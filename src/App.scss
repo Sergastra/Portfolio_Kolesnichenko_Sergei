@@ -1,0 +1,24 @@
+$primary-color: #2d6908;
+
+@import 'animate.css';
+// @import '~loaders.css/src/animatins/pacman.scss';
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('./assets/fonts/HelveticaNeue.ttf') format('ttf');
+}
+
+// @font-face {
+//     font-family: 'La Belle Aurora';
+//     src: url('./assets/fonts/LaBelleAurora.woff2') format('woff2');
+// }
+
+// @font-face {
+//     font-family: 'Coolvetica';
+//     src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+// }
+
+input,
+textarea{
+    font-family: 'HelveticaNeue';
+}
