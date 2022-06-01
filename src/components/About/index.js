@@ -1,6 +1,15 @@
 import './indec.scss';
 import { useEffect, useState } from "react";
 import AnimatedLetters from '../AnimatedLetters';
+import {
+    faFigma,
+    faCss3,
+    faGitAlt,
+    faHtml5,
+    faJsSquare,
+    faReact,
+  } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -8,7 +17,7 @@ const About = () => {
     useEffect(() => {
         return setTimeout(() => {
             setLetterClass('text-animate-hover')
-        }, 4000)
+        }, 3000)
     }, [])
 
     return (
@@ -31,6 +40,28 @@ const About = () => {
                         Font Awesome позволяет комбинировать две иконки и создавать таким образом эффекты маскировки. При этом нужно сначала определить обычную иконку, а затем использовать свойство mask, чтобы определить вторую, которая будет расположена поверх первой. Первая иконка при этом будет ограничена размерами маскирующей иконки.
                     </p>
                 </div>
+                <div className="stage-cube-cont">
+                    <div className="cubespinner">
+                            <div className="face1">
+                            <FontAwesomeIcon icon={faFigma} color="#DD0031" />
+                            </div>
+                            <div className="face2">
+                            <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+                            </div>
+                            <div className="face3">
+                            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+                            </div>
+                            <div className="face4">
+                            <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+                            </div>
+                            <div className="face5">
+                            <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+                            </div>
+                            <div className="face6">
+                            <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+                            </div>
+                    </div>
+                </div>   
             </div>
         </>
     )
