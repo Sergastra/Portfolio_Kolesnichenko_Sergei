@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import AnimatedLetters from '../AnimatedLetters';
 import { useState, useEffect } from "react";
+import LogoTitle from '../../assets/images/logo-s.png';
+// import Logo from './Logo'
 import './index.scss';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = ['С', 'е', 'р', 'г', 'е', 'й']
+    const nameArray = ['е', 'р', 'г', 'е', 'й']
     const jobArray = ['Я', ' ','в','е','б','-','р','а','з','р','а','б','о','т','ч','и','к']
     
 useEffect(() => {
@@ -15,6 +17,7 @@ useEffect(() => {
 }, [])
 
     return (
+        <>
         <div className="container page-home">
             <div className='text-zone'>
                 <h1>
@@ -24,8 +27,9 @@ useEffect(() => {
                     <span className={`${letterClass} _15`}>в</span> 
                     <span className={`${letterClass} _16`}>е</span> 
                     <span className={`${letterClass} _17`}>т</span> 
-                    <span className={`${letterClass} _18`}>,</span> 
-                    <br/>
+                    <span className={`${letterClass} _18`}>,</span>
+                     
+                    <span className={`${letterClass} _19`}> </span> 
                     <span className={`${letterClass} _20`}>м</span> 
                     <span className={`${letterClass} _21`}>е</span> 
                     <span className={`${letterClass} _22`}>н</span> 
@@ -37,6 +41,10 @@ useEffect(() => {
                     <span className={`${letterClass} _28`}>у</span> 
                     <span className={`${letterClass} _29`}>т</span> 
                     <br/>
+                    <img
+                        src={LogoTitle}
+                        alt="JavaScript Developer Name, Web Developer Name"
+                    />
                     <AnimatedLetters 
                     letterClass={letterClass} 
                     strArray={nameArray}
@@ -50,7 +58,10 @@ useEffect(() => {
                 <h2> Frontend Developer | Javascript | React</h2>
                 <Link to="/contact" className="flat-botton"> Мои контакты</Link>
             </div>
+            {/* <Logo/> */}
         </div>
+
+        </>
     )
 }
 

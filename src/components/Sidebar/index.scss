@@ -7,24 +7,24 @@
     z-index: 3;
     min-height: 500px;
     padding: 8px;
-    box-shadow: 9px -2px 13px 0px;
-    h4 {
+    box-shadow: 4px 0px 11px 2px;
+    .logo {
         width: 50px;
         height: 50px;
         display: block;
         padding: 4px 0;
         text-decoration: none;
     
-        // img {
-        //     display: flex;
-        //     margin: 8px auto;
-        //     width: 24px;
-        //     height: auto;
+        img {
+            display: flex;
+            margin: 8px auto;
+            width: 24px;
+            height: auto;
 
-        //     // &.sub-logo {
-        //     //     width: 50px;
-        //     // }
-        // }
+            // &.sub-logo {
+            //     width: 50px;
+            // }
+        }
     }
 
 
@@ -37,7 +37,7 @@
         width: 100%;
     
         a {
-            box-shadow: 9px -2px 13px 0px;
+            box-shadow: 0px 1px 5px 0px;
             font-size: 18px;
             color: #4d4d4e;
             display: flex;

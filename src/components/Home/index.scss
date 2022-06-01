@@ -3,10 +3,10 @@
 
     .text-zone {
         position: absolute;
-        left: 10%;
+        left: 22%;
         top: 50%;
         transform: translateY(-50%);
-        width: 40%;
+        width: 90%;
         max-height: 90%;
     }
 
@@ -16,6 +16,16 @@
         margin: 0;
         font-weight: 400;
         letter-spacing: 1px;
+
+        img {
+            margin-left: 20px;
+            opacity: 0;
+            width: 115px;
+            height: auto;
+            animation: rotateIn 1s linear both;
+            animation-delay: 2.8s;
+          
+        }
 
         &::before {
             content: '<h1>';
