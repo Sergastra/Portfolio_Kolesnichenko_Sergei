@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+// import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
@@ -33,9 +33,9 @@ const Contact = () => {
         () => {
           alert('Failed to send the message, please try again')
         }
-    )
-}
+      )
 
+    }
     return (
         <>
             <div className="container contact-page">
@@ -43,7 +43,7 @@ const Contact = () => {
                     <h1>
                         <AnimatedLetters
                             letterClass={letterClass}
-                            strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
+                            strArray={['М', 'о', 'и', '', 'к', 'о', 'н', 'т', 'а', 'к', 'т', 'ы']}
                             idx={15}
                         />
                     </h1>
@@ -56,7 +56,7 @@ const Contact = () => {
                         <form ref={form} onSubmit={sendEmail}>
                             <ul>
                                 <li className="half">
-                                    <input placeholder="Name" type="text" name="name" required />
+                                    <input placeholder="Имя" type="text" name="name" required />
                                 </li>
                                 <li className="half">
                                     <input
@@ -68,7 +68,7 @@ const Contact = () => {
                                 </li>
                                 <li>
                                     <input
-                                        placeholder="Subject"
+                                        placeholder="Тема"
                                         type="text"
                                         name="subject"
                                         required
@@ -76,13 +76,13 @@ const Contact = () => {
                                 </li>
                                 <li>
                                     <textarea
-                                        placeholder="Message"
+                                        placeholder="Сообщение"
                                         name="message"
                                         required
                                     ></textarea>
                                 </li>
                                 <li>
-                                    <input type="submit" className="flat-button" value="SEND" />
+                                    <input type="submit" className="flat-button" value="отправить" />
                                 </li>
                             </ul>
                         </form>
@@ -95,20 +95,20 @@ const Contact = () => {
                     <br />
                     город <br />
                     Астрахань <br />
+                    <span>+7 967 823 20 11</span>
                     <br />
-                    <span>sergastrah@yandex.ru</span>
+                    <span>"sergastrah@yandex.ru"</span>
                 </div>
-                <div className="map-wrap">
+                {/* <div className="map-wrap">
                     <MapContainer center={[46.34983, 48.032620]} zoom={13}>
                         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                         <Marker position={[46.34983, 48.032620]}>
                             <Popup>Сергей живет здесь, приходи на чашечку кофе :</Popup>
                         </Marker>
                     </MapContainer>
-                </div>
+                </div> */}
             </div>
         </>
     )
-}
-
+  }
 export default Contact

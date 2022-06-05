@@ -8,6 +8,12 @@ import {
     faHtml5,
     faJsSquare,
     faReact,
+    faPhp,
+    faNode,
+    faAngular,
+    faBootstrap,
+    faLaravel,
+    faSass,
   } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -30,16 +36,61 @@ const About = () => {
                             strArray={['О','б','о',' ','м','н','е']}
                             idx={15}/>
                     </h1>
+
                     <p>
-                        Если вам нужны все доступные типы иконки boxing-glove то есть иконки из пакетов fal, far и fas, вы можете импортировать их все под другим именем и затем добавить в свой fontawesome.js.
+                        Возраст: 38 лет, 
+                        <br/>
+                        Прошел обучение по специальности Web-developer Full-stack в компьютерной академии "Топ"
+
+
                     </p>
+                    <h4>Профессиональные навыки:</h4>
                     <p>
-                        Теперь, когда вы установили все то, что вам нужно, и добавили иконки  в библиотеку Font Awesome, мы можем использовать их и определить их размеры. В этом мануале мы будем использовать пакет light .В первом примере мы установим нормальный размер:
-                    </p>
+                        Опыт работы с 
+                    </p>    <span className='icon-works'>
+                            <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+                            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+                            <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+                            <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+                            <FontAwesomeIcon icon={faFigma} color="#DD0031" />
+                            <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+                            <FontAwesomeIcon icon={faNode} color="#2f940e" />
+                        </span>
+                    
+                    <h4>Знания:</h4>
+                        <span className='icon-works'>
+                            <FontAwesomeIcon icon={faPhp} color="#14278f" />
+                            <FontAwesomeIcon icon={faBootstrap} color="#14278f" />
+                            <FontAwesomeIcon icon={faAngular} color="#F06529" />
+                            <FontAwesomeIcon icon={faLaravel} color="#F06529" />
+                            <FontAwesomeIcon icon={faSass} color="#F06529" />
+                        </span>
+                        <p>
+                            Опыт адаптивной верстки;
+                            <br/>
+                            Опыт создания HTML- страницы сайта на основе дизайн макета;
+                            <br/>
+                            Навыки привязки к пользовательскому интерфейсу скриптов, которые обеспечивают визуализацию и анимацию страниц сайта;
+                            <br/>
+                            UI/UX Design;
+                        </p>
+                         
+                        
+
+                        
+                    <h4>Дополнительные сведения:</h4>
                     <p>
-                        Font Awesome позволяет комбинировать две иконки и создавать таким образом эффекты маскировки. При этом нужно сначала определить обычную иконку, а затем использовать свойство mask, чтобы определить вторую, которая будет расположена поверх первой. Первая иконка при этом будет ограничена размерами маскирующей иконки.
+                        Я получаю удовольствие от программирования. Это моё любимое дело, которому я посвещаю много времени. Так же изучаю литературу на эту тему.
+                        <br/>
+                        Готов учиться и совершенствоваться не боюсь трудностей, ответственный и умею работать в команде.
+                        <br/>
+                        <i>Каждый день стараюсь узнавать что-то новое и становиться лучше.</i>
+                        
+                         
+
                     </p>
                 </div>
+                
                 <div className="stage-cube-cont">
                     <div className="cubespinner">
                             <div className="face1">
@@ -61,7 +112,8 @@ const About = () => {
                             <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
                             </div>
                     </div>
-                </div>   
+                </div>
+               
             </div>
         </>
     )

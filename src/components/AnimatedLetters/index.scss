@@ -1,7 +1,7 @@
 .text-animate {
     opacity: 0;
     display: inline-block;
-    animation: bounceIn 1s 1s;
+    animation: bounceIn 1s 1s ease-in-out;
     animation-fill-mode: forwards;
     min-width: 10px;
 }
@@ -12,12 +12,18 @@
 
     &:hover {
         animation: rubberBand 1s;
-        color: #2f940e;
+        // animation: headShake 1s;
+        // animation: wobble 1s;
+        color: rgb(22, 104, 10);
     }
 }
 
 @for $i from 1 through 51 {
     .text-animate._#{$i} {
         animation-delay: #{$i / 10}s;
+        // --circle-color: #{rgba(random(255), random(255), random(255))};
+
+        // animation: fall #{(random(5)/2) + 1}s linear infinite #{random(5)/10}s;
+        // animation: moveRight #{(random(7)/2)+ 8}s linear infinite #{random(7)/2}s
     }
 }

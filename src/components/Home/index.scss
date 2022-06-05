@@ -16,11 +16,19 @@ h1 {
 
     img {
         margin-left: 20px;
-        opacity: 0;
+        opacity: 1;
         width: 115px;
         height: auto;
         animation: rotateIn 1s linear both;
-        animation-delay: 2.8s;
+        animation-delay: 0.8s;
+
+        &:hover {
+            opacity: 0;
+            animation: hinge 1s;
+            animation-fill-mode: both;
+            animation-duration: 1.5s;
+            // animation-delay: 0.4s;
+        }
       
     }
 
@@ -65,12 +73,15 @@ h2 {
     border: 1px solid #2f940e;
     margin-top: 25px;
     float: left;
-    animation: fadeIn 1s 1.8s backwards;
+    animation: fadeIn 5s 5s infinite;
+    animation-fill-mode: forwards;
     white-space: nowrap;
 
     &:hover {
         background: #2f940e;
         color: rgb(25, 24, 24);
+        animation: heartBeat 1s 0.4s ease-in;
+        animation-delay: 0.3s;
     }
 }
 

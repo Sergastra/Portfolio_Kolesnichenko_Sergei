@@ -2,17 +2,21 @@ import {Link, NavLink} from 'react-router-dom'
 import './index.scss'
 import Logo from '../../assets/images/logo-s.png'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faHome, faUser, faGraduationCap, faNetworkWired, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import {faHome, faUser, faNetworkWired, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import {faGithub, faSkype, faTelegram, faWhatsapp} from '@fortawesome/free-brands-svg-icons'
 
 
 const Sidebar = () => (
-
+//    const [ isMobile, setIsMobile ] = useState(false);
     <div className="nav-bar">
+    
+        
         <Link className="logo" to="/">
             <img src={Logo} alt="logo"/>
         </Link>
-        <nav>
+        <nav >
+            {/* className={isMobile ? "nav-links-mobile" : "nav-bar"}
+           onClick={() => setIsMobile(false)} */}
             <NavLink 
                 exact="true" 
                 acteveclassname="active" 
@@ -31,16 +35,8 @@ const Sidebar = () => (
             <NavLink 
                 exact="true" 
                 acteveclassname="active" 
-                className="education-link" 
-                to="education"
-                >
-                <FontAwesomeIcon icon={faGraduationCap} color='#4d4d4e'/>
-            </NavLink>
-            <NavLink 
-                exact="true" 
-                acteveclassname="active" 
-                className="works-link" 
-                to="works"
+                className="projects-link" 
+                to="projects"
                 >
                 <FontAwesomeIcon icon={ faNetworkWired} color='#4d4d4e'/>
             </NavLink>
@@ -92,6 +88,11 @@ const Sidebar = () => (
                 </a>
             </li>
         </ul>
+        {/* <button className="mobile-menu-icon"
+            onClick={() => setIsMobile (!isMobile)}
+          >
+              {isMobile ? (<FontAwesomeIcon icon= {faTimes} />) : (<FontAwesomeIcon icon= {faBars} />)}
+        </button> */}
     </div>
     
 )
