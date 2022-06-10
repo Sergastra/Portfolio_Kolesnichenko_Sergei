@@ -26,6 +26,18 @@
   }
 }
 
+@media screen and (max-width: 746px){
+  .barProg {
+    display: flex;
+    bottom: -152%;
+    position: absolute;
+    left: 12%;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+}
+
 @media screen and (max-width: 500px){
   .barProg {
     display: flex;
@@ -35,14 +47,7 @@
     flex-direction: column;
     align-items: flex-start;
     align-content: flex-start;
-}
-  
-  
-    svg {
-      position: relative;
-      font-size: 29px;
-      top: 40px;
-    }
+  }
 }
   
 

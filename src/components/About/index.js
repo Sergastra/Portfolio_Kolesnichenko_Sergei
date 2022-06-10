@@ -88,6 +88,8 @@ const About = () => {
                         <br/>
                         Готов учиться и совершенствоваться не боюсь трудностей, ответственный и умею работать в команде.
                         <br/>
+                        Планирую в ближайшее время приступить к изучению Английского языка
+                        <br/>
                         <mark>Каждый день стараюсь узнавать что-то новое и становиться лучше.</mark>
                     </p>
                 </div>
@@ -95,11 +97,11 @@ const About = () => {
                     <FontAwesomeIcon icon={faHtml5} color="#F06529" />
                     <ProgressBar done='70' />
                     <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-                    <ProgressBar done='55'/>
+                    <ProgressBar done='65'/>
                     <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-                    <ProgressBar done='85'/>
+                    <ProgressBar done='55'/>
                     <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-                    <ProgressBar done='96'/>
+                    <ProgressBar done='55'/>
                 </div>
                 <div className="stage-cube-cont">
                     <div className="cubespinner">
