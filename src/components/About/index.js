@@ -16,6 +16,8 @@ import {
     faSass,
   } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import My from '../../assets/images/IMG-My.png'
+import ProgressBar from './Progress_bar/progressBar'
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -40,7 +42,9 @@ const About = () => {
                     <p>
                         Возраст: 38 лет, 
                         <br/>
-                        Прошел обучение по специальности Web-developer Full-stack в компьютерной академии "Топ"
+                        Образование: Высшее, Астраханский государственный университет ППФ 2006г.
+                        <br/>
+                        Прошел обучение по специальности Web-developer Full-stack в компьютерной академии "Топ" 2022г.
 
 
                     </p>
@@ -84,17 +88,26 @@ const About = () => {
                         <br/>
                         Готов учиться и совершенствоваться не боюсь трудностей, ответственный и умею работать в команде.
                         <br/>
-                        <i>Каждый день стараюсь узнавать что-то новое и становиться лучше.</i>
-                        
-                         
-
+                        <mark>Каждый день стараюсь узнавать что-то новое и становиться лучше.</mark>
                     </p>
                 </div>
-                
+                <div className='barProg'>
+                    <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+                    <ProgressBar done='70' />
+                    <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+                    <ProgressBar done='55'/>
+                    <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+                    <ProgressBar done='85'/>
+                    <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+                    <ProgressBar done='96'/>
+                </div>
                 <div className="stage-cube-cont">
                     <div className="cubespinner">
                             <div className="face1">
-                            <FontAwesomeIcon icon={faFigma} color="#DD0031" />
+                            <img 
+                                src={My} 
+                                alt='my-foto'
+                            />
                             </div>
                             <div className="face2">
                             <FontAwesomeIcon icon={faHtml5} color="#F06529" />

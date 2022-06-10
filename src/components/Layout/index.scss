@@ -7,34 +7,52 @@
 .top-tags {
   bottom: auto;
   top: 35px;
+  position: sticky;
+  float: left;
 }
 
 .top-tags-body {
-  top: 26px;
-  /* left: 9px; */
-  margin-left: -100px;
+  top: 55px;
+  // left: 9px;
+  margin-left: 11px;
+  position: sticky;
 
 }
   
 .tags {
   color: #2f940e;
     opacity: 0.6;
-    position: absolute;
+    position: fixed;
     bottom: 25px;
     left: 112px;
     font-size: 18px;
+    float: left;
     font-family: 'La Belle Aurore', cursive;
 }
   
 .bottom-tag-html {
   margin-left: -20px;
+  float: left;
+  position: fixed;
+}
+
+@media screen and (max-width: 746px) {
+  .tags {
+    color: #2f940e;
+      opacity: 0.6;
+      position: fixed;
+      bottom: 25px;
+      left: 7px;
+      font-size: 18px;
+      font-family: 'La Belle Aurore', cursive;
+  }
 }
 
 .container {
   width: 100%;
     will-change: contents;
     height: 90%;
-    min-height: 566px;
+    // min-height: 566px;
     position: absolute;
     opacity: 0;
     top: 5%;
@@ -47,8 +65,8 @@
 
 .about-page {
   .text-zone {
-    left: 10%;
-    top: 50%;
+    left: 18%;
+    top: 60%;
     transform: translateY(-50%);
     width: 45%;
     vertical-align: middle;
@@ -68,6 +86,7 @@
 
       &::before {
         content: '<h1>';
+        color: #2f940e;
         font-family: Tahoma;
         font-size: 18px;
         position: absolute;
@@ -79,6 +98,7 @@
 
       &::after {
         content: '</h1>';
+        color: #2f940e;
         font-family: Tahoma;
         font-size: 18px;
         position: absolute;
@@ -154,7 +174,7 @@
     .text-zone {
       // position: absolute;
       left: 18%;
-      // top: 50%;
+      top: 100%;
       transform: translateY(-50%);
       width: 70%;
       vertical-align: middle;
@@ -238,10 +258,44 @@
   
     h1 {
       margin-left: 10px;
+      font-size: 45px;
+        font-family: 'Calibri';
+        color: rgb(222, 228, 226);
+        font-weight: 400;
+        margin-top: 0;
+        position: relative;
+        margin-bottom: 40px;
+        left: 10px;
+
+
+
+
+      &::before {
+        content: '<h1>';
+        font-family: Tahoma;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -10px;
+        left: -10px;
+        opacity: 0.6;
+        line-height: 18px;
+      }
+
+      &::after {
+        content: '</h1>';
+        font-family: Tahoma;
+        font-size: 18px;
+        position: absolute;
+        bottom: -20px;
+        left: -30px;
+        margin-left: 20px;
+        opacity: 0.6;
+        line-height: 18px;
+      }
     } 
 
     p {
-      font-size: 13px;
+      font-size: 18px;
       color: #fff;
       font-family: sans-serif;
       font-weight: 300;
@@ -254,3 +308,34 @@
     }
   }
 }
+
+@media screen and (max-width:746px) {
+  .contact-page {
+    .text-zone {
+      transform: translateY(-50%);
+      // width: 100%;
+      max-height: 82%;
+      top: 78%;
+      // left: 11%;
+    
+      h1 {
+        font-size: 24px;
+        margin-left: 10px;
+      } 
+
+      p {
+        font-size: 13px;
+        color: #fff;
+        font-family: sans-serif;
+        font-weight: 300;
+        max-width: fit-content;
+        animation: pulse 1s;
+
+        &:nth-of-type(1) {
+          animation-delay: 1.2s;
+        }
+      }
+    }
+  }
+}
+  

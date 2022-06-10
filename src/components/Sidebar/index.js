@@ -10,11 +10,11 @@ const Sidebar = () => (
 //    const [ isMobile, setIsMobile ] = useState(false);
     <div className="nav-bar">
     
-        
         <Link className="logo" to="/">
             <img src={Logo} alt="logo"/>
         </Link>
         <nav >
+            
             {/* className={isMobile ? "nav-links-mobile" : "nav-bar"}
            onClick={() => setIsMobile(false)} */}
             <NavLink 

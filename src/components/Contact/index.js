@@ -20,10 +20,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'gmail',
-        'template_YeJhZkgb',
+        'service_vibifyk',
+        'template_bugjar1',
         form.current,
-        'your-token'
+        'dxVqpTYrRKI2GjPeg'
       )
       .then(
         () => {
@@ -48,9 +48,7 @@ const Contact = () => {
                         />
                     </h1>
                     <p>
-                        Меня интересуют возможности фриланса - особенно амбициозные или
-                        крупные проекты. Однако, если у вас есть другой запрос или вопрос,
-                        не стесняйтесь обращаться ко мне, используя форму ниже.
+                        Меня интересуют возможности приглашения на работу. Однако, если у вас есть другой запрос или вопрос,не стесняйтесь обращаться ко мне, используя форму ниже.
                     </p>
                     <div className="contact-form">
                         <form ref={form} onSubmit={sendEmail}>
@@ -100,13 +98,14 @@ const Contact = () => {
                     <span>"sergastrah@yandex.ru"</span>
                 </div>
                 {/* <div className="map-wrap">
-                    <MapContainer center={[46.34983, 48.032620]} zoom={13}>
-                        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                        <Marker position={[46.34983, 48.032620]}>
+                    <MapContainer center={[46.3649, 48.0666]} zoom={13}>
+                        {/* <TileLayer url="https://www.openstreetmap.org/?mlat=46.36469&mlon=48.06626#map=18/46.36469/48.06626" /> */}
+                        {/* <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                        <Marker position={[46.3649, 48.0666]}>
                             <Popup>Сергей живет здесь, приходи на чашечку кофе :</Popup>
                         </Marker>
                     </MapContainer>
-                </div> */}
+                </div> */} */
             </div>
         </>
     )

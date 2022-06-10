@@ -1,0 +1,10 @@
+.popup {
+    display: none;
+}
+
+
+@media screen and (max-width: 550px) {
+    .popup {
+        display: block;
+    }
+}

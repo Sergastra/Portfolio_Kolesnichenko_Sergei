@@ -1,9 +1,10 @@
-.contact-form {
-  width: 100%;
-  margin-top: 20px;  
-
+// .contact-form {
+//   width: 100%;
+//   margin-top: 20px;  
+  
   p {
     width: 80%;
+    font-size: 18px;
     color: #fff;
   }
   
@@ -35,7 +36,8 @@
         margin-left: 0;
       }
     }
-  }  
+  } 
+ 
   
   input[type='text'],
     input[type='email'] {
@@ -84,7 +86,7 @@
         color: rgb(30, 29, 29);
       }
     }
-}
+// }
   
 .map-wrap {
     background: rgb(1, 1, 16, 0.1);
@@ -107,8 +109,8 @@
   // position: absolute;
   background: #040825db;
   float: right;
-  // top: 50px;
-  // right: 13%;
+  top: 50px;
+  right: 13%;
   z-index: 999999;
   // width: 221px;
   margin: 15px;
@@ -126,4 +128,22 @@
       color:#2f940e;
       margin-top: 1px;
     }
+}
+
+@media screen and (max-width: 746px) {
+  .contact-form {
+    width: 100%;
+    margin-top: 20px;
+    
+    ul li.half {
+      width: 100%;
+      margin-left: 0;
+      float: left;
+      clear: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
 }
