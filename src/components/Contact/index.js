@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-// import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
@@ -18,22 +18,22 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault()
 
-    emailjs
-      .sendForm(
-        'service_vibifyk',
-        'template_bugjar1',
-        form.current,
-        'dxVqpTYrRKI2GjPeg'
-      )
-      .then(
-        () => {
-          alert('Message successfully sent!')
-          window.location.reload(false)
-        },
-        () => {
-          alert('Failed to send the message, please try again')
-        }
-      )
+        emailjs
+        .sendForm(
+            'service_vibifyk',
+            'template_bugjar1',
+            form.current,
+            'dxVqpTYrRKI2GjPeg'
+        )
+        .then(
+            () => {
+            alert('Message successfully sent!')
+            window.location.reload(false)
+            },
+            () => {
+            alert('Failed to send the message, please try again')
+            }
+        )
 
     }
     return (
@@ -97,15 +97,15 @@ const Contact = () => {
                     <br />
                     <span>"sergastrah@yandex.ru"</span>
                 </div>
-                {/* <div className="map-wrap">
+                <div className="map-wrap">
                     <MapContainer center={[46.3649, 48.0666]} zoom={13}>
-                        {/* <TileLayer url="https://www.openstreetmap.org/?mlat=46.36469&mlon=48.06626#map=18/46.36469/48.06626" /> */}
-                        {/* <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                         <TileLayer url="https://www.openstreetmap.org/?mlat=46.36469&mlon=48.06626#map=18/46.36469/48.06626" />
+                         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                         <Marker position={[46.3649, 48.0666]}>
                             <Popup>Сергей живет здесь, приходи на чашечку кофе :</Popup>
                         </Marker>
                     </MapContainer>
-                </div> */} */
+                </div> 
             </div>
         </>
     )

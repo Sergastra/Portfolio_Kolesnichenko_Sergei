@@ -1,3 +1,9 @@
+@mixin random-color($selector) {
+    #{$selector}: unquote("rgba(#{random(256) - 1}, #{random(256)-1}, #{random(256 - 1)}, #{random(100)/100})");
+    
+}
+
+
 .text-animate {
     opacity: 0;
     display: inline-block;
@@ -14,16 +20,39 @@
         animation: rubberBand 1s;
         // animation: headShake 1s;
         // animation: wobble 1s;
-        color: rgb(22, 104, 10);
+        @include random-color('color');
+    }
+    // }rgb(random(255), random(255), random(255))
+}
+$color : red, green, blue, yellow, purple, orange, lightblue;
+
+// .text-color-hover {
+//     &:hover {
+//         // animation: headShake 1s;
+//         // animation: wobble 1s;
+//          #FF00FF, #FFFF00, #0000FF, #7CFC00;
+//     }
+// }
+
+@for $i from 1 through 52 {
+    .text-animate._#{$i} {
+        animation-delay: #{$i / 15}s;
     }
 }
-
-@for $i from 1 through 51 {
-    .text-animate._#{$i} {
-        animation-delay: #{$i / 10}s;
+// @for $i from 1 through 52 {
+//     .text-animate-hover._#{length($color)}n+#{i} {
+        
+//         color:random(length($color))}
+// }
         // --circle-color: #{rgba(random(255), random(255), random(255))};
 
         // animation: fall #{(random(5)/2) + 1}s linear infinite #{random(5)/10}s;
         // animation: moveRight #{(random(7)/2)+ 8}s linear infinite #{random(7)/2}s
-    }
-}
+    
+    // .text-color._#{$i} {
+    //     animation-delay: #{$i / 10}s;
+    //     // --circle-color: #{rgba(random(255), random(255), random(255))};
+
+    //     // animation: fall #{(random(5)/2) + 1}s linear infinite #{random(5)/10}s;
+    //     // animation: moveRight #{(random(7)/2)+ 8}s linear infinite #{random(7)/2}s
+    // }

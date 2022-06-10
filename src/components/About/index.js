@@ -17,7 +17,6 @@ import {
   } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import My from '../../assets/images/IMG-My.png'
-import ProgressBar from './Progress_bar/progressBar'
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -45,13 +44,14 @@ const About = () => {
                         Образование: Высшее, Астраханский государственный университет ППФ 2006г.
                         <br/>
                         Прошел обучение по специальности Web-developer Full-stack в компьютерной академии "Топ" 2022г.
-
-
+                        <br/>
+                        <a href='https://disk.yandex.ru/i/RUv_LuYsL0RaDg' rel='noreferrer'> Диплом смотреть тут</a>
                     </p>
                     <h4>Профессиональные навыки:</h4>
                     <p>
                         Опыт работы с 
-                    </p>    <span className='icon-works'>
+                    </p>    
+                        <span className='icon-works'>
                             <FontAwesomeIcon icon={faHtml5} color="#F06529" />
                             <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
                             <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
@@ -79,54 +79,42 @@ const About = () => {
                             UI/UX Design;
                         </p>
                          
-                        
-
-                        
                     <h4>Дополнительные сведения:</h4>
-                    <p>
-                        Я получаю удовольствие от программирования. Это моё любимое дело, которому я посвещаю много времени. Так же изучаю литературу на эту тему.
-                        <br/>
-                        Готов учиться и совершенствоваться не боюсь трудностей, ответственный и умею работать в команде.
-                        <br/>
-                        <mark>Каждый день стараюсь узнавать что-то новое и становиться лучше.</mark>
-                    </p>
-                </div>
-                <div className='barProg'>
-                    <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-                    <ProgressBar done='70' />
-                    <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-                    <ProgressBar done='55'/>
-                    <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-                    <ProgressBar done='85'/>
-                    <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-                    <ProgressBar done='96'/>
+                        <p>
+                            Я получаю удовольствие от программирования. Это моё любимое дело, которому я посвещаю много времени. Так же изучаю литературу на эту тему.
+                            <br/>
+                            Готов учиться и совершенствоваться не боюсь трудностей, ответственный и умею работать в команде.
+                            <br/>
+                            Планирую в ближайшее время приступить к изучению Английского языка
+                            <br/>
+                            <mark>Каждый день стараюсь узнавать что-то новое и становиться лучше.</mark>
+                        </p>
                 </div>
                 <div className="stage-cube-cont">
                     <div className="cubespinner">
-                            <div className="face1">
+                        <div className="face1">
                             <img 
                                 src={My} 
                                 alt='my-foto'
                             />
-                            </div>
-                            <div className="face2">
+                        </div>
+                        <div className="face2">
                             <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-                            </div>
-                            <div className="face3">
+                        </div>
+                        <div className="face3">
                             <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-                            </div>
-                            <div className="face4">
+                        </div>
+                        <div className="face4">
                             <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-                            </div>
-                            <div className="face5">
+                        </div>
+                        <div className="face5">
                             <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-                            </div>
-                            <div className="face6">
+                        </div>
+                        <div className="face6">
                             <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
-                            </div>
+                        </div>
                     </div>
                 </div>
-               
             </div>
         </>
     )

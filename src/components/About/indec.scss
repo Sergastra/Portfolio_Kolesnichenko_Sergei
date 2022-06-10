@@ -26,6 +26,18 @@
   }
 }
 
+@media screen and (max-width: 746px){
+  .barProg {
+    display: flex;
+    bottom: -152%;
+    position: absolute;
+    left: 12%;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+}
+
 @media screen and (max-width: 500px){
   .barProg {
     display: flex;
@@ -35,23 +47,13 @@
     flex-direction: column;
     align-items: flex-start;
     align-content: flex-start;
-}
-  
-  
-    svg {
-      position: relative;
-      font-size: 29px;
-      top: 40px;
-    }
+  }
 }
   
 
 
 .cubespinner {
-  animation-name: spincube;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 12s;
+  animation: spincube 12s ease-in-out infinite;
   transform-style: preserve-3d;
   transform-origin: 100px 100px 0;
   margin-left: calc(50% - 100px);
@@ -78,7 +80,6 @@
       }
   }
   
-
   .face2 {
     transform: rotateY(90deg) translateZ(100px);
     color: #f06529;

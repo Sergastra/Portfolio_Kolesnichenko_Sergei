@@ -1,18 +1,23 @@
 import { Link } from "react-router-dom";
 import AnimatedLetters from '../AnimatedLetters';
+// import RandomColor from '../RandomColor';
 import { useState, useEffect } from "react";
 import LogoTitle from '../../assets/images/logo-s.png';
 import './index.scss';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
+    const [color, setColor] = useState('text-animate-hover')
+
     const nameArray = ['е', 'р', 'г', 'е', 'й']
     const jobArray = ['Я', ' ','в','е','б','-','р','а','з','р','а','б','о','т','ч','и','к']
+    const colorArray = ['#FF1493', '#FF00FF', '#FFFF00', '#0000FF', '#7CFC00']
     
 useEffect(() => {
     return setTimeout(() => {
         setLetterClass('text-animate-hover')
-    }, 4000)
+        setColor(':hover')
+    }, 3000)
 }, [])
 
     return (
@@ -45,14 +50,26 @@ useEffect(() => {
                         alt="JavaScript Developer Name, Web Developer Name"
                     />
                     <AnimatedLetters 
-                    letterClass={letterClass} 
+                    letterClass={letterClass}
+                    color={color}
+                    colorArray={colorArray}
                     strArray={nameArray}
                     idx={31}/>
+                    {/* <RandomColor
+                        color={color}
+                        colorArray={nameArray}
+                        idx={31} 
+                    /> */}
                     <br/>
                     <AnimatedLetters 
-                    letterClass={letterClass} 
+                    letterClass={letterClass}
                     strArray={jobArray}
-                    idx={35}/> 
+                    idx={36}/>
+                    {/* <RandomColor
+                        color={color}
+                        colorArray={jobArray}
+                        idx={35} 
+                    />  */}
                 </h1>
                 <h2> Frontend Developer | Javascript | React</h2>
                 <Link to="/contact" className="flat-botton"> Мои контакты</Link>

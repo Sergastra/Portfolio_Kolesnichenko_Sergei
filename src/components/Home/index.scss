@@ -21,7 +21,7 @@
 
     h1 {
         color: rgb(220, 206, 206);
-        font-size: 53px;
+        font-size: calc( 28px + ( 53 - 28 ) * (( 100vw - 320px ) / ( 980 - 320 )));
         margin: 0;
         font-weight: 400;
         letter-spacing: 1px;
@@ -80,10 +80,11 @@
         font-size: 14px;
         font-weight: 400;
         letter-spacing: 4px;
+        text-align: center;
         text-decoration: none;
         padding: 10px 18px;
         border: 1px solid #2f940e;
-        margin-top: 25px;
+        margin-top: 50px;
         float: left;
         animation: fadeIn 5s 5s infinite;
         animation-fill-mode: forwards;
@@ -103,28 +104,31 @@
             
         
         }
-        
-    }
-    &::before {
-        content: '<button>';
-        color: #2f940e;
-        font-size: 18px;
-        position: absolute;
-        top: 77%;
-        left: 19%;
-        opacity: 0.6;
-        animation: fadeIn 1s 1.7s backwards;
-    }
 
-    &::after {
-        content: '</button>';
-        color: #2f940e;
-        font-size: 18px;
-        position: absolute;
-        top: 77%;
-        left: 51%;
-        animation: fadeIn 1s 1.7s backwards;
+        // &::before {
+        //     content: '<button>';
+        //     color: #2f940e;
+        //     font-size: 18px;
+        //     position: absolute;
+        //     top: 77%;
+        //     left: 19%;
+        //     opacity: 0.6;
+        //     animation: fadeIn 1s 1.7s backwards;
+        // }
+
+        // &::after {
+        //     content: '</button>';
+        //     color: #2f940e;
+        //     font-size: 18px;
+        //     position: absolute;
+        //     top: 77%;
+        //     left: 51%;
+        //     animation: fadeIn 1s 1.7s backwards;
+        // }
     }
+    
+
+    
 }
 
 
@@ -141,7 +145,6 @@
         
         h1 {
             color: rgb(220, 206, 206);
-            font-size: 24px;
             margin: 0;
             font-weight: 400;
             letter-spacing: 1px;

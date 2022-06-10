@@ -3,7 +3,7 @@ import './styleSlidGallery.css'
 import foto from '../../../assets/images/IMG-My.jpg'
 import foto1 from '../../../assets/images/h2js8JelrPw.jpg'
 import foto2 from '../../../assets/images/certificate.jpg'
-import foto3 from '../../../assets/images/IMG-My.png'
+import foto3 from '../../../assets/MyProjects/HouseVop_Landing.png'
 import React from 'react'
 
 const images = [
@@ -40,7 +40,7 @@ function SlidGallery() {
                         <p>{img.description}</p>
                     
                     </span>
-                ))}
+                ))} 
             {/* <span style={{'--i':1}}><a href='../../../assets/images/logo-s.png'><img src={foto} alt=''/></a></span>
             <span style={{'--i':2}}><img src={foto1} alt=''/></span>
             <span style={{'--i':3}}><img src={foto2} alt=''/></span>
