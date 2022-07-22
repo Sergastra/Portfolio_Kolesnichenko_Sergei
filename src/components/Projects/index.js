@@ -46,7 +46,7 @@ const Projects = ()=> {
                 <li>SCSS</li>
                 <li>JavaScript</li>
               </ul>
-              <a className='link-project' href= "https://sergastra.github.io/my-city/" rel="noopener">Смотреть поект</a>
+              <a className='link-project' href= "https://sergastra.github.io/HouseVop_Landing/" rel="noopener">Смотреть поект</a>
             </div>
         </span>
 
@@ -72,7 +72,7 @@ const Projects = ()=> {
               <li>CSS</li>
               <li>Bootstrap</li>
             </ul>
-            <a className='link-project' href= "https://sergastra.github.io/my-city/" rel="noopener">Смотреть проект </a>
+            <a className='link-project' href= "https://sergastra.github.io/travel-website/" rel="noopener">Смотреть проект </a>
           </div>
         
         </span>
@@ -86,7 +86,7 @@ const Projects = ()=> {
               <li>CSS</li>
               <li>JavaScript</li>
             </ul>
-            <a className='link-project' href= "https://sergastra.github.io/my-city/" rel="noopener">Смотреть проект </a>
+            <a className='link-project' href= "https://sergastra.github.io/Dog-Product-Landing-page/" rel="noopener">Смотреть проект </a>
           </div>
 
         </span>
@@ -101,7 +101,7 @@ const Projects = ()=> {
               <li>CSS</li>
               <li>JavaScript</li>
             </ul>
-            <a className='link-project' href= "https://sergastra.github.io/my-city/" rel="noopener">Смотреть проект</a>
+            <a className='link-project' href= "https://sergastra.github.io/AudioPlayer/" rel="noopener">Смотреть проект</a>
           </div>
         
         </span>
