@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-// import { YMaps, Map, Placemark } from "react-yandex-maps"
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
@@ -97,26 +96,6 @@ const Contact = () => {
                     <br />
                     <span>"sergastrah@yandex.ru"</span>
                 </div>
-                {/* <div className="map-wrap">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2753.2360407610568!2d48.06400265290711!3d46.36470469430477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41a905080588c8df%3A0x4b054d975e89673c!2zMS3RjyDQn9C10YDQtdCy0L7Qt9C90LDRjyDRg9C7Liwg0JDRgdGC0YDQsNGF0LDQvdGMLCDQkNGB0YLRgNCw0YXQsNC90YHQutCw0Y8g0L7QsdC7LiwgNDE0MDUy!5e0!3m2!1sru!2sru!4v1658488263377!5m2!1sru!2sru" 
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-
-                    </iframe> */}
-                    {/* <YMaps >
-                        <div>
-                            <Map  
-                                center={[46.3649, 48.0666]} 
-                                zoom={5}
-                            >
-
-                            </Map>
-                        <Placemark geometry={[46.3649, 48.0666]}>
-                            {/* <Popup>Сергей живет здесь, приходи на чашечку кофе :</Popup> */}
-                        {/* </Placemark>
-                        </div>
-                    </YMaps> */} 
-                {/* </div>  */}
             </div>
         </>
     )

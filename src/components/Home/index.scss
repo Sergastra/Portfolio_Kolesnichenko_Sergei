@@ -39,9 +39,7 @@
                 animation: hinge 1s;
                 animation-fill-mode: both;
                 animation-duration: 1.5s;
-                // animation-delay: 0.4s;
             }
-        
         }
 
         &::before {
@@ -104,31 +102,7 @@
             
         
         }
-
-        // &::before {
-        //     content: '<button>';
-        //     color: #2f940e;
-        //     font-size: 18px;
-        //     position: absolute;
-        //     top: 77%;
-        //     left: 19%;
-        //     opacity: 0.6;
-        //     animation: fadeIn 1s 1.7s backwards;
-        // }
-
-        // &::after {
-        //     content: '</button>';
-        //     color: #2f940e;
-        //     font-size: 18px;
-        //     position: absolute;
-        //     top: 77%;
-        //     left: 51%;
-        //     animation: fadeIn 1s 1.7s backwards;
-        // }
     }
-    
-
-    
 }
 
 
@@ -162,7 +136,6 @@
                     animation: hinge 1s;
                     animation-fill-mode: both;
                     animation-duration: 1.5s;
-                    // animation-delay: 0.4s;
                 }
               
             }
@@ -186,7 +159,6 @@
                 margin-left: 12px;
                 animation: fadeIn 1s 1.7s backwards;
             }
-        
         }
         
         h2 {
@@ -213,11 +185,8 @@
             animation-fill-mode: forwards;
             white-space: nowrap;
             margin-bottom: -15%;
-
-            
         }
     }
-    
 }
 
 @media screen and (max-width: 450px) {

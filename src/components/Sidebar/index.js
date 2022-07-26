@@ -65,7 +65,7 @@ const Sidebar = () => {
                 <a 
                     target="_blank" 
                     rel='noreferrer' 
-                    href='https://github.com/Sergastra'
+                    href="skype:i.p.kolesnichenko?chat"
                 >
                     <FontAwesomeIcon icon={faSkype}  color='#4d4d4e'/> 
                 </a>
@@ -74,7 +74,7 @@ const Sidebar = () => {
                 <a 
                     target="_blank" 
                     rel='noreferrer' 
-                    href='https://gist.github.com/Sergastra'
+                    href="https://telegram.me/share/url?url=<sergastra>"
                 >
                     <FontAwesomeIcon icon={faTelegram}  color='#4d4d4e'/> 
                 </a>
@@ -83,7 +83,7 @@ const Sidebar = () => {
                 <a 
                     target="_blank" 
                     rel='noreferrer' 
-                    href='/contact'
+                    href="https://wa.me/79678232011"
                 >
                     <FontAwesomeIcon icon={faWhatsapp}  color='#4d4d4e'/> 
                 </a>
