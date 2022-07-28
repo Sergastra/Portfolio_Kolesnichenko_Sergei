@@ -4,7 +4,7 @@ import HouseVop from '../../assets/MyProjects/HouseVop_Landing.png'
 import foto from '../../assets/MyProjects/my-city_site.png'
 import ToureGuide from '../../assets/MyProjects/travel-site.png'
 import DogProduct from '../../assets/MyProjects/Cool_Dog.png'
-import foto3 from '../../assets/MyProjects/weather-site.png'
+import App_Weather from '../../assets/MyProjects/weather-site.png'
 import Mobile_AudioPlayer from '../../assets/MyProjects/Mobile_AudioPlayer.png'
 import "./index.scss"
 
@@ -36,7 +36,7 @@ const Projects = ()=> {
       <div className='box'>
 
         <span style={{ '--i': 1 }}>
-          <img src={HouseVop} alt='' />
+          <img src={HouseVop} alt='HouseVop' />
           <div className='overlay_text'>
               <h3>Одностраничный сайт<br/>"House VOP"</h3>
               <ul>
@@ -48,7 +48,7 @@ const Projects = ()=> {
             </div>
         </span>
 
-        <span style={{ '--i': 2 }}><img src={foto} alt=''/>
+        <span style={{ '--i': 2 }}><img src={foto} alt='Мой город'/>
         
         <div className='overlay_text'>
             <h3>SPA<br/>"Мой город"</h3>
@@ -77,7 +77,7 @@ const Projects = ()=> {
         </span>
 
         <span style={{ '--i': 4 }}>
-          <img src={DogProduct} alt='' />
+          <img src={DogProduct} alt='DogProduct' />
 
           <div className='overlay_text'>
             <h3>Одностраничный сайт<br/>"Dog Product"</h3>
@@ -105,11 +105,11 @@ const Projects = ()=> {
         </span>
 
         <span style={{ '--i': 6 }}>
-          <img src={foto3} alt='' />
+          <img src={App_Weather} alt='' />
         </span>
 
         <span style={{ '--i': 7 }}>
-          <img src={foto3} alt='' />
+          <img src={App_Weather} alt='app-weather' />
 
           <div className='overlay_text'>
             <h3>Приложение<br/>"Прогноз погоды"</h3>
@@ -119,7 +119,7 @@ const Projects = ()=> {
               <li>JavaScript</li>
               <li>API</li>
             </ul>
-            <a className='link-project' href= "https://sergastra.github.io/my-city/" target="_blank" rel="noreferrer">Смотреть проект</a>
+            <a className='link-project' href= "sergastra.github.io/app-weather/" target="_blank" rel="noreferrer">Смотреть проект</a>
           </div>
         </span> 
       </div>

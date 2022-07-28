@@ -36,17 +36,20 @@
 
 @media screen and (max-width: 746px) {
   .top-tags {
-    top: 60px;
+    // top: 60px;
+    display: none;
   }
 
   .top-tags-body {
-    top: 22px;
-    margin-left: 0px;
-    position: sticky;
+    display: none;
+    // top: 22px;
+    // margin-left: 0px;
+    // position: sticky;
   
   }
 
   .tags {
+    display: none;
     color: #2f940e;
     opacity: 0.6;
     position: absolute;
@@ -326,11 +329,10 @@
       transition: .5s;
       width: 70%;
       max-height: 82%;
-      top: 70%;
+      top: 80%;
 
     
       h1 {
-        font-size: 24px;
         margin-left: 10px;
       } 
 
@@ -347,6 +349,13 @@
           animation-delay: 1.2s;
         }
       }
+    }
+
+    &::after {
+      display: none;
+    }
+    &::before {
+      display: none;
     }
   }
 }
