@@ -119,7 +119,7 @@ const Projects = ()=> {
               <li>JavaScript</li>
               <li>API</li>
             </ul>
-            <a className='link-project' href= "sergastra.github.io/app-weather/" target="_blank" rel="noreferrer">Смотреть проект</a>
+            <a className='link-project' href= "https://sergastra.github.io/App-Weather/" target="_blank" rel="noreferrer">Смотреть проект</a>
           </div>
         </span> 
       </div>
