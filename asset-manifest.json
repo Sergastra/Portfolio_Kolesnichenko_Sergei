@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Portfolio_Kolesnichenko_Sergei/static/css/main.6833e6b2.css",
+    "main.js": "/Portfolio_Kolesnichenko_Sergei/static/js/main.a7733515.js",
+    "static/media/HouseVop_Landing.png": "/Portfolio_Kolesnichenko_Sergei/static/media/HouseVop_Landing.87df7ec35e4fc6f5bd36.png",
+    "static/media/my-city_site.png": "/Portfolio_Kolesnichenko_Sergei/static/media/my-city_site.f246ec1f8ba515969b29.png",
+    "static/media/travel-site.png": "/Portfolio_Kolesnichenko_Sergei/static/media/travel-site.a0d8f0f209b5558890c7.png",
+    "static/media/Cool_Dog.png": "/Portfolio_Kolesnichenko_Sergei/static/media/Cool_Dog.9734701c03d01376933b.png",
+    "static/media/IMG-My.png": "/Portfolio_Kolesnichenko_Sergei/static/media/IMG-My.5a2b8959681b6d7946df.png",
+    "static/media/Mobile_AudioPlayer.png": "/Portfolio_Kolesnichenko_Sergei/static/media/Mobile_AudioPlayer.991cc651e00daa00ae40.png",
+    "static/media/logo-s.png": "/Portfolio_Kolesnichenko_Sergei/static/media/logo-s.37c9ed54a7f79b2d348f.png",
+    "static/media/weather-site.png": "/Portfolio_Kolesnichenko_Sergei/static/media/weather-site.76e4b8c761dcfb119ad7.png",
+    "static/media/HelveticaNeue.ttf": "/Portfolio_Kolesnichenko_Sergei/static/media/HelveticaNeue.371670cc0c4aa701241a.ttf",
+    "static/media/slick.svg": "/Portfolio_Kolesnichenko_Sergei/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Portfolio_Kolesnichenko_Sergei/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Portfolio_Kolesnichenko_Sergei/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Portfolio_Kolesnichenko_Sergei/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Portfolio_Kolesnichenko_Sergei/index.html",
+    "main.6833e6b2.css.map": "/Portfolio_Kolesnichenko_Sergei/static/css/main.6833e6b2.css.map",
+    "main.a7733515.js.map": "/Portfolio_Kolesnichenko_Sergei/static/js/main.a7733515.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6833e6b2.css",
+    "static/js/main.a7733515.js"
+  ]
+}
