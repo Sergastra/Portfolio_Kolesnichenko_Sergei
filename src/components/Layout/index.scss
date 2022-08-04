@@ -82,7 +82,7 @@
     width: 45%;
     vertical-align: middle;
     display: table-cell;
-    max-height: 90%;
+    // max-height: 90%;
     
 
     h1 {
@@ -186,12 +186,13 @@
   .about-page {
     .text-zone {
       left: 18%;
-      top: 100%;
+      top: 130%;
       transform: translateY(-50%);
       width: 70%;
       vertical-align: middle;
       display: table-cell;
-      max-height: 90%;
+      height: 160vh;
+      max-height: none;
       overflow: visible;
   
       h1 {
@@ -323,12 +324,15 @@
 
 @media screen and (max-width:746px) {
   .contact-page {
+    
+
     .text-zone {
       transform: translateY(-50%);
       transition: .5s;
       width: 70%;
-      height: 100vh;
-      top: 85%;
+      height: 110vh;
+      top: 95%;
+      max-height: none;
 
     
       h1 {

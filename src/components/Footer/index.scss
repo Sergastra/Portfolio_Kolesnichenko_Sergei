@@ -14,5 +14,20 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+
+        h5 {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 746px) {
+    .footer {
+        height: fit-content;
+
+        .sub {
+            flex-direction: column;
+            padding: 10px;
+        }
     }
 }

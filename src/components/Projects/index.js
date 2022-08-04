@@ -103,12 +103,7 @@ const Projects = ()=> {
             <a className='link-project' href= "https://sergastra.github.io/AudioPlayer/" target="_blank" rel="noreferrer">Смотреть проект</a>
           </div>
         </span>
-
         <span style={{ '--i': 6 }}>
-          <img src={App_Weather} alt='' />
-        </span>
-
-        <span style={{ '--i': 7 }}>
           <img src={App_Weather} alt='app-weather' />
 
           <div className='overlay_text'>
