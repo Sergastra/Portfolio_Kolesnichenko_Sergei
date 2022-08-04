@@ -5,34 +5,34 @@ import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 
 const Contact = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
-  const form = useRef()
+    const [letterClass, setLetterClass] = useState('text-animate')
+    const form = useRef()
 
-  useEffect(() => {
-    return setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
+    useEffect(() => {
+        return setTimeout(() => {
+            setLetterClass('text-animate-hover')
+        }, 3000)
+    }, [])
 
-  const sendEmail = (e) => {
-    e.preventDefault()
+    const sendEmail = (e) => {
+        e.preventDefault()
 
         emailjs
-        .sendForm(
-            'service_vibifyk',
-            'template_bugjar1',
-            form.current,
-            'dxVqpTYrRKI2GjPeg'
-        )
-        .then(
-            () => {
-            alert('Message successfully sent!')
-            window.location.reload(false)
-            },
-            () => {
-            alert('Failed to send the message, please try again')
-            }
-        )
+            .sendForm(
+                'service_vibifyk',
+                'template_bugjar1',
+                form.current,
+                'dxVqpTYrRKI2GjPeg'
+            )
+            .then(
+                () => {
+                    alert('Message successfully sent!')
+                    window.location.reload(false)
+                },
+                () => {
+                    alert('Failed to send the message, please try again')
+                }
+            )
 
     }
     return (
@@ -99,5 +99,5 @@ const Contact = () => {
             </div>
         </>
     )
-  }
+}
 export default Contact

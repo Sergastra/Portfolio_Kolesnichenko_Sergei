@@ -9,10 +9,8 @@ import Mobile_AudioPlayer from '../../assets/MyProjects/Mobile_AudioPlayer.png'
 import "./index.scss"
 
 
+const Projects = () => {
 
-
-const Projects = ()=> {
- 
   const [letterClass, setLetterClass] = useState('text-animate')
 
   useEffect(() => {
@@ -38,41 +36,41 @@ const Projects = ()=> {
         <span style={{ '--i': 1 }}>
           <img src={HouseVop} alt='HouseVop' />
           <div className='overlay_text'>
-              <h3>Одностраничный сайт<br/>"House VOP"</h3>
-              <ul>
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-              </ul>
-              <a className='link-project' href= "https://sergastra.github.io/HouseVop_Landing/" target="_blank" rel="noreferrer">Смотреть поект</a>
-            </div>
+            <h3>Одностраничный сайт<br />"House VOP"</h3>
+            <ul>
+              <li>HTML</li>
+              <li>SCSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <a className='link-project' href="https://sergastra.github.io/HouseVop_Landing/" target="_blank" rel="noreferrer">Смотреть поект</a>
+          </div>
         </span>
 
-        <span style={{ '--i': 2 }}><img src={foto} alt='Мой город'/>
-        
-        <div className='overlay_text'>
-            <h3>SPA<br/>"Мой город"</h3>
+        <span style={{ '--i': 2 }}><img src={foto} alt='Мой город' />
+
+          <div className='overlay_text'>
+            <h3>SPA<br />"Мой город"</h3>
             <ul>
               <li>React</li>
               <li>CSS</li>
               <li>Bootstrap</li>
               <li>HTML</li>
             </ul>
-            <a className='link-project' href= "https://sergastra.github.io/my-city/" target="_blank" rel="noreferrer">Смотреть поект</a>
+            <a className='link-project' href="https://sergastra.github.io/my-city/" target="_blank" rel="noreferrer">Смотреть поект</a>
           </div>
         </span>
 
         <span style={{ '--i': 3 }}>
-          <img src={ToureGuide} alt='Toure-Guide' /> 
-        
+          <img src={ToureGuide} alt='Toure-Guide' />
+
           <div className='overlay_text'>
-            <h3>Туристический сайт<br/>"Toure-Guide"</h3>
+            <h3>Туристический сайт<br />"Toure-Guide"</h3>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
               <li>Bootstrap</li>
             </ul>
-            <a className='link-project' href= "https://sergastra.github.io/travel-website/" target="_blank" rel="noreferrer">Смотреть проект </a>
+            <a className='link-project' href="https://sergastra.github.io/travel-website/" target="_blank" rel="noreferrer">Смотреть проект </a>
           </div>
         </span>
 
@@ -80,13 +78,13 @@ const Projects = ()=> {
           <img src={DogProduct} alt='DogProduct' />
 
           <div className='overlay_text'>
-            <h3>Одностраничный сайт<br/>"Dog Product"</h3>
+            <h3>Одностраничный сайт<br />"Dog Product"</h3>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
             </ul>
-            <a className='link-project' href= "https://sergastra.github.io/Dog-Product-Landing-page/" target="_blank" rel="noreferrer">Смотреть проект </a>
+            <a className='link-project' href="https://sergastra.github.io/Dog-Product-Landing-page/" target="_blank" rel="noreferrer">Смотреть проект </a>
           </div>
         </span>
 
@@ -94,29 +92,29 @@ const Projects = ()=> {
           <img src={Mobile_AudioPlayer} alt='Mobile_AudioPlayer' />
 
           <div className='overlay_text'>
-            <h3>Мобильное приложение<br/>"Аудио плеер"</h3>
+            <h3>Мобильное приложение<br />"Аудио плеер"</h3>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
             </ul>
-            <a className='link-project' href= "https://sergastra.github.io/AudioPlayer/" target="_blank" rel="noreferrer">Смотреть проект</a>
+            <a className='link-project' href="https://sergastra.github.io/AudioPlayer/" target="_blank" rel="noreferrer">Смотреть проект</a>
           </div>
         </span>
         <span style={{ '--i': 6 }}>
           <img src={App_Weather} alt='app-weather' />
 
           <div className='overlay_text'>
-            <h3>Приложение<br/>"Прогноз погоды"</h3>
+            <h3>Приложение<br />"Прогноз погоды"</h3>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
               <li>API</li>
             </ul>
-            <a className='link-project' href= "https://sergastra.github.io/App-Weather/" target="_blank" rel="noreferrer">Смотреть проект</a>
+            <a className='link-project' href="https://sergastra.github.io/App-Weather/" target="_blank" rel="noreferrer">Смотреть проект</a>
           </div>
-        </span> 
+        </span>
       </div>
     </div>
   )

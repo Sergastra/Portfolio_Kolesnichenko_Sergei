@@ -36,16 +36,11 @@
 
 @media screen and (max-width: 746px) {
   .top-tags {
-    // top: 60px;
     display: none;
   }
 
   .top-tags-body {
     display: none;
-    // top: 22px;
-    // margin-left: 0px;
-    // position: sticky;
-  
   }
 
   .tags {
@@ -82,7 +77,6 @@
     width: 45%;
     vertical-align: middle;
     display: table-cell;
-    // max-height: 90%;
     
 
     h1 {

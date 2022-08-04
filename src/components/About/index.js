@@ -14,7 +14,7 @@ import {
     faBootstrap,
     faLaravel,
     faSass,
-  } from '@fortawesome/free-brands-svg-icons'
+} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import My from '../../assets/images/IMG-My.png'
 
@@ -33,71 +33,71 @@ const About = () => {
                 <div className='text-zone'>
                     <h1>
                         <AnimatedLetters
-                            letterClass={letterClass} 
-                            strArray={['О','б','о',' ','м','н','е']}
-                            idx={15}/>
+                            letterClass={letterClass}
+                            strArray={['О', 'б', 'о', ' ', 'м', 'н', 'е']}
+                            idx={15} />
                     </h1>
 
                     <p>
-                        Возраст: 38 лет, 
-                        <br/>
+                        Возраст: 38 лет,
+                        <br />
                         Образование: Высшее, Астраханский государственный университет ППФ 2006г.
-                        <br/>
+                        <br />
                         Прошел обучение по специальности Web-developer Full-stack в компьютерной академии "Топ" 2022г.
-                        <br/>
+                        <br />
                         <a href='https://disk.yandex.ru/i/RUv_LuYsL0RaDg' target="_blank" rel='noreferrer'> Диплом смотреть тут</a>
                     </p>
                     <h4>Профессиональные навыки:</h4>
                     <p>
-                        Опыт работы с 
-                    </p>    
-                        <span className='icon-works'>
-                            <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-                            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-                            <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-                            <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-                            <FontAwesomeIcon icon={faFigma} color="#DD0031" />
-                            <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
-                            <FontAwesomeIcon icon={faNode} color="#2f940e" />
-                        </span>
-                    
+                        Опыт работы с
+                    </p>
+                    <span className='icon-works'>
+                        <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+                        <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+                        <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+                        <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+                        <FontAwesomeIcon icon={faFigma} color="#DD0031" />
+                        <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+                        <FontAwesomeIcon icon={faNode} color="#2f940e" />
+                    </span>
+
                     <h4>Знания:</h4>
-                        <span className='icon-works'>
-                            <FontAwesomeIcon icon={faPhp} color="#14278f" />
-                            <FontAwesomeIcon icon={faBootstrap} color="#14278f" />
-                            <FontAwesomeIcon icon={faAngular} color="#F06529" />
-                            <FontAwesomeIcon icon={faLaravel} color="#F06529" />
-                            <FontAwesomeIcon icon={faSass} color="#F06529" />
-                        </span>
-                        <p>
-                            Опыт адаптивной верстки;
-                            <br/>
-                            Опыт создания HTML- страницы сайта на основе дизайн макета;
-                            <br/>
-                            Навыки привязки к пользовательскому интерфейсу скриптов, которые обеспечивают визуализацию и анимацию страниц сайта;
-                            <br/>
-                            UI/UX Design;
-                        </p>
-                         
+                    <span className='icon-works'>
+                        <FontAwesomeIcon icon={faPhp} color="#14278f" />
+                        <FontAwesomeIcon icon={faBootstrap} color="#14278f" />
+                        <FontAwesomeIcon icon={faAngular} color="#F06529" />
+                        <FontAwesomeIcon icon={faLaravel} color="#F06529" />
+                        <FontAwesomeIcon icon={faSass} color="#F06529" />
+                    </span>
+                    <p>
+                        Опыт адаптивной верстки;
+                        <br />
+                        Опыт создания HTML- страницы сайта на основе дизайн макета;
+                        <br />
+                        Навыки привязки к пользовательскому интерфейсу скриптов, которые обеспечивают визуализацию и анимацию страниц сайта;
+                        <br />
+                        UI/UX Design;
+                    </p>
+
                     <h4>Дополнительные сведения:</h4>
 
-                        <p>
-                            Я получаю удовольствие от программирования. Это моё любимое дело, которому я посвещаю много времени. Так же изучаю литературу на эту тему.
-                            <br/>
-                            Готов учиться и совершенствоваться не боюсь трудностей, ответственный и умею работать в команде.
-                            <br/>
-                            Планирую в ближайшее время приступить к изучению Английского языка
-                            <br/>
-                            <mark>Каждый день стараюсь узнавать что-то новое и становиться лучше.</mark>
-                        </p>
-                    
+                    <p>
+                        Я получаю удовольствие от программирования. Это моё любимое дело, которому я посвещаю много времени. Так же изучаю литературу на эту тему.
+                        <br />
+                        Готов учиться и совершенствоваться не боюсь трудностей, ответственный и умею работать в команде.
+                        <br />
+                        Планирую в ближайшее время приступить к изучению Английского языка
+                        <br />
+                        <mark>Каждый день стараюсь узнавать что-то новое и становиться лучше.</mark>
+                    </p>
+
                 </div>
-                
+
                 <div className="stage-cube-cont">
                     <div className="cubespinner">
                         <div className="face1">
-                            <img 
-                                src={My} 
+                            <img
+                                src={My}
                                 alt='my-foto'
                             />
                         </div>
