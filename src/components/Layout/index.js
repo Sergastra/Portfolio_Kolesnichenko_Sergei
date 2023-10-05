@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom'
+
 import Sidebar from '../Sidebar'
 import Footer from '../Footer'
 import './index.scss'
@@ -15,8 +15,6 @@ const Layout = () => {
           <span className="tags top-tags-body">&lt;body&gt;</span>
         </span>
 
-
-        <Outlet />
         <span className="tags bottom-tags">
           &lt;/body&gt;
           <br />
